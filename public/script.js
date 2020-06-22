@@ -7,9 +7,11 @@ $(document).ready(function() {
             top: '66%'
         })
         $btn.attr('form', 'form1');
+        $btn.prop('disabled', false)
     })
     $('#no').click(() => {
         $btn.attr('form', '');
+        $btn.prop('disabled', false)
     })
     $btn.hover(function() {
         moveButton()

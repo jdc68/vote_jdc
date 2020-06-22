@@ -91,9 +91,16 @@ body {
     padding: 0;
 }
 
-.vote-btn:hover {
+.vote-btn:hover:not([disabled]) {
     background-color: #003088;
 }
+
+
+.vote-btn:disabled {
+    cursor: no-drop;
+    background: #4466A6;
+}
+
 
 .voting-option {
     width: 49%;
