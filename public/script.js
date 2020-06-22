@@ -6,6 +6,10 @@ $(document).ready(function() {
             left: '50%',
             top: '66%'
         })
+        $btn.attr('form', 'form1');
+    })
+    $('#no').click(() => {
+        $btn.attr('form', '');
     })
     $btn.hover(function() {
         moveButton()
