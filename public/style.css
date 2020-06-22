@@ -1,0 +1,162 @@
+body {
+    background: #E2E2E2;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bahnschrift Light';
+
+}
+
+.wrapp {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.header-wrapp0 {
+    border-bottom: #D52B1E solid 5px;
+}
+
+.header-wrapp1 {
+    position: relative;
+    height: 60px;
+    background: #fff;
+    border-bottom: #0039A6 solid 5px;
+}
+
+.header-wrapp1 h1 {
+    font-weight: normal;
+    font-size: 28px;
+    margin: 0 20px;
+    transform: translateY(50%);
+    bottom: 50%;
+    position: absolute;
+}
+
+.main-wrapp0 {
+    border-bottom: #D52B1E solid 5px;
+    position: absolute;
+    transform: translate(50%, 50%);
+    right: 50%;
+    bottom: 50%;
+    box-shadow: #000 0px 0px 2px;
+}
+
+.main-wrapp1 {
+    background: #ffffff;
+    width: 600px;
+    height: 750px;
+    border-bottom: #0039A6 solid 5px;
+    padding: 20px 50px;
+    font-family: 'Bahnschrift Light';
+}
+
+.main-wrapp1 p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.main-wrapp1 h2 {
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+    height: 40px;
+}
+
+.voting-wrapp {
+    position: relative;
+    height: 60%;
+    text-align: center;
+ 
+}
+
+.vote-btn-wrapp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.vote-btn {
+    font-size: 19px;
+    border: none;
+    color: #fff;
+    background: #0039A6;
+    width: 215px;
+    height: 64px;
+    transition: 0.1s;
+    cursor: pointer;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 66%;
+    padding: 0;
+}
+
+.vote-btn:hover {
+    background-color: #003088;
+}
+
+.voting-option {
+    width: 49%;
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    text-align: initial;
+}
+
+.voting-option label input {
+    width: 30px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.voting-option label {
+    padding-left: 115px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 64px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .voting-wrapp label:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .voting-wrapp label input:checked ~ .checkmark {
+    background-color: #0039A6;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .voting-wrapp label input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .voting-wrapp label .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

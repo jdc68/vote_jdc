@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Голосование Онлайн</title>
+      <link rel="stylesheet" href="/style.css" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js" defer></script>
+   </head>
+
+   <body>
+      <div class="wrapp">
+         <div class="header-wrapp0">
+            <div class="header-wrapp1">
+               <h1>
+                  ОНЛАЙН-ГОЛОСОВАНИЕ ЗА ПОПРАВКИ В КОНСТИТУЦИЮ РФ
+               </h1>
+            </div>
+         </div>
+         <div class="main-wrapp0">
+            <div class="main-wrapp1">
+               <h2>Голосование</h2>
+               <hr>
+               <p>
+                  Президент России Владимир Путин 14 марта 2020 года подписал Закон Российской Федерации о поправке к Конституции Российской Федерации № 1-ФКЗ "О совершенствовании регулирования отдельных вопросов организации и функционирования публичной власти".
+               </p>
+               <h4>Как Вы относитесь к данным изменениям?</h4>
+               <form id="form1" class="voting-wrapp" action="/voted" method="GET">
+                  <div class="voting-option">
+                     <label for="yes"> За
+                        <input type="radio" name="vote-option" id="yes">
+                        <span class="checkmark"></span>
+                     </label>
+                  </div>
+                  <div class="voting-option">
+                     <label for="no">Против
+                        <input type="radio" name="vote-option" id="no">
+                        <span class="checkmark"></span>
+                     </label>
+                  </div>
+               </form>
+               <hr>
+               <p>
+                  Отдайте свой голос за внесение поправок в конституцию Российской Федерации. От Вашего независимого голоса зависит будущее нашей великой страны и 6-ой срок нашего президента.
+               </p>
+
+            </div>
+         </div>
+         <button class="vote-btn" id="vote-btn" form="form1" type="submit">ОТДАТЬ ГОЛОС</button>
+      </div>
+   </body>
+
+</html>
